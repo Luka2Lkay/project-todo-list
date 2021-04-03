@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Project Todo LIst</title>
+        <meta charset="UTF-8">
+        <meta name='vieport' content="width=device-width initial-scale=1.0">
+        <link href='style.css' rel='stylesheet' type='text/css'>
+    </head>
+
+    <body>
+        <header>
+            <h1>My Todo List</h1>
+        </header>
+        <div class=containers>
+            <div id='projects'>
+                <form action='#' id='project_form' data-new-project-form>
+                    <input type='text' placeholder="New Project" id='new_project_input' data-new-project-input required>
+                    <input type="submit" value="+" id="add_project_button">
+                </form>
+                <ul class='project_list' data-projects>
+                   <li class="new_project active" data-default-project>Default Project</li>
+                   <li class="empty_list"></li>
+                </ul>
+
+            </div>
+    
+            <div id= 'tasks'>
+                <input type='button' value='NEW TASK' id="new_task_button">
+
+            <form action='#' id="task_form">
+                <input type="button" value="X" id="cancel_task_button">
+                <input type="text" placeholder="Task name" id="new_task_input" required><br><br>
+                <label id="due_date_label">Due Date</label><br>
+                <input type="date" id="date"><br><br>
+                <label for="priority_dropdown" class="label_dropdown">Priority</label><br>
+                <select name="priority_dropdown" id="priority_dropdown">
+                    <option value="high">HIGH</option>
+                    <option value="medium">MEDIUM</option>
+                    <option value="low">LOW</option>
+                </select><br><br>
+                
+                <input type="submit" value="SUBMIT" id="submit_task_button">
+
+            </form>
+
+            <div id="task_list">
+                <div id="task_list_header">
+                    <h2 id="task_title"></h2>
+                    <p id="task_count"></p>
+                </div>
+                    <div id="task_body"></div>
+            </div>
+
+            </div>
+        </div>
+            
+        <script src='main.js'></script>
+       
+    </body>
+</html>

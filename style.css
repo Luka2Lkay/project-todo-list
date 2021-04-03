@@ -1,0 +1,169 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: blue;
+}
+
+.empty_list{
+    background-color: inherit;
+}
+
+#projects{
+    border: 1px solid white;
+    width: 30%;
+    min-height: 300px;
+    margin-right: 10px;
+}
+
+#tasks{
+    border: 1px solid white;
+    width: 60%;
+    min-height: 300px;
+}
+
+.containers{
+    display: flex;
+}
+
+h1{
+    text-align: center;
+    color: #fff;
+}
+
+ul li{
+    list-style-type: none;
+    font-size: 22px;
+    background-color: yellowgreen;
+    display: inline;
+    padding: 5px 10px 5px 10px;
+    color: #fff;
+    margin-left: 0.9%;
+    margin-right: 23%;
+    font-weight: 700;
+    margin-top: 5px;
+}
+
+.active{
+    color: blue;
+}
+
+ul li:hover{
+    border: 3px solid #fff;
+    cursor: default;
+}
+
+.empty_list:hover{
+    border: none;
+}
+
+.delete_project{
+float: right;
+font-size: 20px;
+margin-left: 10px;
+}
+
+.project_list{
+    display: flex;
+    flex-direction: column;
+}
+
+#new_project_input{
+    margin-top: 10px;
+    font-size: 20px;
+    margin-left: 10%;
+}
+
+#add_project_button{
+    font-size: 18px;
+    
+}
+
+
+#task_form{
+    margin: 0 auto;
+    width: 40%;
+    border: 5px solid white;
+    display: none;
+    padding: 10px;
+}
+
+#new_task_input, #date{
+    width: 95%;
+    font-size: 20px;
+}
+
+#new_task_button{
+      margin: 10px 0 10px 45%;
+      font-size: 20px;
+      display: block;
+}
+
+#description{
+    font-size: 20px;
+}
+
+#task_form label{
+    color: white;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.task_buttons{
+    display: flex;
+}
+
+#submit_task_button{
+    margin: 5px 50px 0 120px;
+    padding: 5px 20px 5px 20px;
+    font-size: 25px;    
+}
+
+#cancel_task_button{
+    border: 0;
+    background-color: inherit;
+    color: white;
+    font-size: 20px;
+    font-weight: 700;
+    margin-left: 92%;
+    margin-bottom: 5px;
+}
+
+#priority_dropdown, .label_dropdown{
+    margin-left: 35%;
+}
+
+#cancel_task_button:hover{
+    border: 5px solid red;
+    transition: 0.2s ease-in;
+
+}
+
+#task_list_header{
+    display: flex;
+    align-items: center;
+}
+
+#task_title{
+    flex: 1;
+    margin-left: 10px;
+    color: #fff;
+}
+
+#task_count{
+    margin-right: 10px;
+    color: #fff;
+}
+
+#task_body{
+ display: flex;   
+ flex-direction: column;
+ font-size: 18px;
+ color: white;
+
+}
+
+.check_box{
+    float: left;
+    margin-top: -0.5px;
+}
