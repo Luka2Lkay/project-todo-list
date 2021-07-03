@@ -14,6 +14,7 @@ body{
     width: 30%;
     min-height: 300px;
     margin-right: 10px;
+    margin-left: 2em;
 }
 
 #tasks{
@@ -166,4 +167,10 @@ margin-left: 10px;
 .check_box{
     float: left;
     margin-top: -0.5px;
+}
+
+@media only screen and (max-width: 1024px){
+    #new_project_input{
+        width: 70%;
+    }
 }
